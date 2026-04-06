@@ -1,0 +1,9 @@
+{
+  "name": "d32_wl40_nw10_win5_p1_q1",
+  "dimensions": 32,
+  "walk_length": 40,
+  "num_walks": 10,
+  "window": 5,
+  "p": 1.0,
+  "q": 1.0
+}

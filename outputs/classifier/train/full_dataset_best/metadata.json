@@ -1,0 +1,129 @@
+{
+  "test_size": 0.3,
+  "test_random_state": 7,
+  "input_dims": {
+    "emb_maxspeed": 128,
+    "emb_time": 128,
+    "emb_length": 128,
+    "emb_lanes": 128,
+    "emb_ref": 64,
+    "bridge": 3,
+    "highway": 17,
+    "junction": 7,
+    "lanes": 7,
+    "slope": 1,
+    "angle": 1,
+    "oneway": 3
+  },
+  "branch_names": [
+    "emb_maxspeed",
+    "emb_time",
+    "emb_length",
+    "emb_lanes",
+    "emb_ref",
+    "bridge",
+    "highway",
+    "junction",
+    "lanes",
+    "slope",
+    "angle",
+    "oneway"
+  ],
+  "branch_widths": [
+    40,
+    40,
+    40,
+    30,
+    120,
+    40,
+    60,
+    10,
+    10,
+    20,
+    20,
+    20
+  ],
+  "best_epoch": 68,
+  "best_threshold": 0.678,
+  "best_score": 0.9916317991631799,
+  "early_stop_metric": "f1",
+  "threshold_search": {
+    "metric": "f1",
+    "min_precision": 0.0,
+    "num_candidates": 1001
+  },
+  "final_hidden": 8,
+  "category_maps": {
+    "bridge": {
+      "__unknown__": 0,
+      "viaduct": 1,
+      "yes": 2
+    },
+    "highway": {
+      "primary": 0,
+      "tertiary": 1,
+      "trunk": 2,
+      "trunk_link": 3,
+      "secondary": 4,
+      "unclassified": 5,
+      "service": 6,
+      "junction": 7,
+      "residential": 8,
+      "living_street": 9,
+      "secondary_link": 10,
+      "primary_link": 11,
+      "tertiary_link": 12,
+      "motorway": 13,
+      "motorway_link": 14,
+      "traffic_island": 15,
+      "__unknown__": 16
+    },
+    "junction": {
+      "__unknown__": 0,
+      "intersection": 1,
+      "interchange": 2,
+      "circular": 3,
+      "traffic_signals": 4,
+      "separate": 5,
+      "roundabout": 6
+    },
+    "lanes": {
+      "3.0": 0,
+      "2.0": 1,
+      "4.0": 2,
+      "1.0": 3,
+      "__unknown__": 4,
+      "5.0": 5,
+      "6.0": 6
+    },
+    "oneway": {
+      "True": 0,
+      "False": 1,
+      "__unknown__": 2
+    }
+  },
+  "run_manifest": {
+    "embeddings": {
+      "maxspeed": "/Users/cowcheng/Documents/careers/studies/predictive-screening-accident-black-spots/outputs/node2vec/edge_maxspeed/best_model_edges.npy",
+      "time": "/Users/cowcheng/Documents/careers/studies/predictive-screening-accident-black-spots/outputs/node2vec/edge_time/best_model_edges.npy",
+      "length": "/Users/cowcheng/Documents/careers/studies/predictive-screening-accident-black-spots/outputs/node2vec/edge_length/best_model_edges.npy",
+      "lanes": "/Users/cowcheng/Documents/careers/studies/predictive-screening-accident-black-spots/outputs/node2vec/edge_lanes/best_model_edges.npy",
+      "ref": "/Users/cowcheng/Documents/careers/studies/predictive-screening-accident-black-spots/outputs/node2vec/edge_ref/best_model_edges.npy"
+    },
+    "edge_info_csv": "/Users/cowcheng/Documents/careers/studies/predictive-screening-accident-black-spots/data/final/osm_edge_info_completed.csv",
+    "branch_names": [
+      "emb_maxspeed",
+      "emb_time",
+      "emb_length",
+      "emb_lanes",
+      "emb_ref",
+      "bridge",
+      "highway",
+      "junction",
+      "lanes",
+      "slope",
+      "angle",
+      "oneway"
+    ]
+  }
+}

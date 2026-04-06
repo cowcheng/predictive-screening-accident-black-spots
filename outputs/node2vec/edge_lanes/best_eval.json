@@ -1,0 +1,44 @@
+{
+  "selection_metric_priority": [
+    "auc",
+    "mrr",
+    "hit_at_10",
+    "score_margin"
+  ],
+  "weight_transform": "none",
+  "best_result": {
+    "name": "d64_wl20_nw10_win5_p1_q1",
+    "dimensions": 64,
+    "walk_length": 20,
+    "num_walks": 10,
+    "window": 5,
+    "p": 1.0,
+    "q": 1.0,
+    "auc": 0.7758182629243827,
+    "mrr": 0.4303176529896129,
+    "hit_at_1": 0.3454861111111111,
+    "hit_at_5": 0.4947916666666667,
+    "hit_at_10": 0.6325231481481481,
+    "positive_mean_cosine": 0.7195319805242535,
+    "negative_mean_cosine": 0.505472439798479,
+    "score_margin": 0.2140595407257745,
+    "positive_score_lane_corr": -0.21503340274284888
+  },
+  "graph_stats": {
+    "edge_rows": 8642,
+    "nodes": 6749,
+    "min_lanes": 1.0,
+    "max_lanes": 6.0,
+    "mean_lanes": 1.7716963665818097,
+    "avg_out_degree": 1.2885045474876995,
+    "avg_in_degree": 1.2877365519296677,
+    "lane_count_1": 4272,
+    "lane_count_2": 2600,
+    "lane_count_3": 1296,
+    "lane_count_4": 423,
+    "lane_count_5": 47,
+    "lane_count_6": 4
+  },
+  "train_rows": 6914,
+  "test_rows": 1728
+}

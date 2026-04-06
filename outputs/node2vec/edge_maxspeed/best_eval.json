@@ -1,0 +1,45 @@
+{
+  "selection_metric_priority": [
+    "auc",
+    "mrr",
+    "hit_at_10",
+    "score_margin"
+  ],
+  "weight_transform": "none",
+  "best_result": {
+    "name": "d64_wl20_nw10_win5_p1_q1",
+    "dimensions": 64,
+    "walk_length": 20,
+    "num_walks": 10,
+    "window": 5,
+    "p": 1.0,
+    "q": 1.0,
+    "auc": 0.7846474395040295,
+    "mrr": 0.4351594813420891,
+    "hit_at_1": 0.35300925925925924,
+    "hit_at_5": 0.49363425925925924,
+    "hit_at_10": 0.6354166666666666,
+    "positive_mean_cosine": 0.7240289845072699,
+    "negative_mean_cosine": 0.5047678213024348,
+    "score_margin": 0.21926116320483513,
+    "positive_score_speed_corr": -0.04466152894884493
+  },
+  "graph_stats": {
+    "edge_rows": 8642,
+    "nodes": 6749,
+    "min_speed": 8.0,
+    "max_speed": 100.0,
+    "mean_speed": 51.1083082619764,
+    "median_speed": 50.0,
+    "avg_out_degree": 1.2885045474876995,
+    "avg_in_degree": 1.2877365519296677,
+    "speed_8": 6,
+    "speed_30": 36,
+    "speed_50": 8203,
+    "speed_70": 252,
+    "speed_80": 87,
+    "speed_100": 58
+  },
+  "train_rows": 6914,
+  "test_rows": 1728
+}

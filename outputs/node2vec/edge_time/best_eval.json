@@ -1,0 +1,41 @@
+{
+  "selection_metric_priority": [
+    "auc",
+    "mrr",
+    "hit_at_10",
+    "score_margin"
+  ],
+  "weight_transform": "none",
+  "best_result": {
+    "name": "d64_wl20_nw10_win5_p1_q1",
+    "dimensions": 64,
+    "walk_length": 20,
+    "num_walks": 10,
+    "window": 5,
+    "p": 1.0,
+    "q": 1.0,
+    "auc": 0.7834016458226166,
+    "mrr": 0.42795816270774645,
+    "hit_at_1": 0.33912037037037035,
+    "hit_at_5": 0.4947916666666667,
+    "hit_at_10": 0.6278935185185185,
+    "positive_mean_cosine": 0.72332760538147,
+    "negative_mean_cosine": 0.5073121852264739,
+    "score_margin": 0.21601542015499609,
+    "positive_score_time_corr": 0.009875377439789225
+  },
+  "graph_stats": {
+    "edge_rows": 8642,
+    "nodes": 6749,
+    "min_time": 0.02722055650005205,
+    "max_time": 23.08644198166879,
+    "mean_time": 1.1132244308737476,
+    "median_time": 0.5997236300414625,
+    "p95_time": 3.826312051853966,
+    "p99_time": 7.172728228532277,
+    "avg_out_degree": 1.2885045474876995,
+    "avg_in_degree": 1.2877365519296677
+  },
+  "train_rows": 6914,
+  "test_rows": 1728
+}
